@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <style>
+            body {
+                display: flex;
+                justify-content: center; 
+                align-items: center;    
+                min-height: 100vh;      
+                margin: 0;             
+                font-family: sans-serif;
+                background-color: whitesmoke;
+            }
+
+            .profile-card {
+                background-color: white;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                padding: 20px; 
+                width: 300px; 
+                text-align: center; 
+                box-sizing: border-box; 
+                border: 2px solid black;
+            }
+
+            .profile-image {
+                width: 150px;
+                height: 150px;
+                border-radius: 50%; 
+                object-fit: cover; 
+                border: 3px solid white; 
+                margin-bottom: 15px;
+                box-sizing: content-box;
+            }
+
+            .profile-details {
+                padding: 10px;
+            }
+
+            .profile-name {
+                margin-bottom: 5px;
+            }
+
+            .profile-bio {
+                font-size: 0.9em;
+                color: gray;
+                margin-bottom: 15px;
+            }
+
+            .follow-button {
+                background-color: dodgerblue;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+                box-sizing: border-box;
+            }
+
+            .follow-button:hover {
+                background-color: #0056b3;
+            }
+    </style>
+</head>
+<body>
+    <div class="profile-card">
+        <img src="images.jpg" alt="Profile Picture" class="profile-image">
+        <div class="profile-details">
+            <h2 class="profile-name">Nick.</h2>
+            <p class="profile-bio">Web Developer | Cricket Player | Exploring the world. | Gamer | </p>
+            <button class="follow-button">Follow</button>
+        </div>
+    </div>
+</body>
+</html>
